@@ -1,0 +1,118 @@
+﻿@model Project_2.oder_tb
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Order_List</title>
+    <link href="~/index.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url('https://projectstorage444.blob.core.windows.net/image/order2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    td{
+        font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        font-weight:800;
+        font-size:larger;
+
+    }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+        
+        <div align="center" class="form-horizontal">
+            <h1>Order-Details</h1>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <table>
+            <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.Product_Name, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.Product_Name, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+                <div class="col-md-10">
+                    @Html.ValidationMessageFor(model => model.Product_Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.Landmark, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.Landmark, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Landmark, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <tr>
+                <td>@Html.LabelFor(model => model.Pincode, htmlAttributes: new { @class = "control-label col-md-2" })</td>
+                <td>@Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @class = "form-control" } })</td>
+            </tr>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        </table>
+            <div class="form-group">
+                <div class="container">
+                    <input type="submit" value="Place Order" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    
+
+</body>
+</html>

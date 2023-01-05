@@ -1,0 +1,36 @@
+﻿
+/*.navbarnavbar-default {
+    background-color:;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: larger;
+}
+.collapse navbar-collapse {
+    color: white;
+    font-size: larger;
+}
+*/
+.container input[type=submit] {
+    color: white;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 60px;
+    border: 1px solid;
+    background-color: black;
+}
+.form-control {
+    height: 30px;
+    border: 10PX;
+    margin-top: 2.5vh;
+    margin-left: 4vw;
+    border-radius: 30px;
+}
+

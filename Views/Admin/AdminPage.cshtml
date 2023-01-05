@@ -1,0 +1,208 @@
+﻿@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/index.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 263px;
+            height: 216px;
+        }
+
+        a img {
+            border-radius: 25px;
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .row {
+            margin-left: 95px;
+            margin-top: 50px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Nunito Sans;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .content {
+            width: 24%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding-top: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: .4s;
+        }
+
+            .content:hover {
+                box-shadow: 0 0 11px rgba(33,33,33,.2);
+                transform: translate(0px, -8px);
+                transition: .6s;
+            }
+
+        img {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+
+        p {
+            text-align: center;
+            color: #b2bec3;
+            padding: 0 8px;
+        }
+
+        h6 {
+            font-size: 26px;
+            text-align: center;
+            color: #222f3e;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        .fa {
+            color: #ff9f43;
+            font-size: 26px;
+            transition: .4s;
+        }
+
+            .fa:hover {
+                transform: scale(1.3);
+                transition: .6s;
+            }
+
+        button {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            width: 100%;
+            padding: 15px;
+            border: 0px;
+            outline: none;
+            cursor: pointer;
+            margin-top: 5px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .buy-1 {
+            background-color: #2183a2;
+        }
+
+        .buy-2 {
+            background-color: #3b3e6e;
+        }
+
+        .buy-3 {
+            background-color: #0b0b0b;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="navbar navbar-inverse">
+            <div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li> <a style="font-family:'Javanese Text'; font-size:xx-large">Luffy Shop</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" style="float:right !important">
+                        <li><img src="https://projectstorage444.blob.core.windows.net/image/LOGO.png" style="width:75px; height:75px; border-radius:40px;" /></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-th-list"></span>Product</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav" style="float:right !important">
+                    <li><a href="/Admin/Login"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+                    <li><a href="Home/About"><span class="glyphicon glyphicon-th-list"></span>About</a></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <div class="gallery">
+        <div class="content">
+            <h3>Customer</h3>
+            <p>
+                <a href="https://magicminds365.sharepoint.com/sites/LuffyShop/_layouts/15/workbench.aspx">
+                    <img src="https://projectstorage444.blob.core.windows.net/image/customer1.png" style="width:250px; height:250px" />
+                </a>
+            </p>
+            <button class="buy-1">Details</button>
+        </div>
+        <div class="content">
+            <h3>Products</h3>
+            <p>
+                <a href="~/Admin/ListProducts">
+                    <img src="https://projectstorage444.blob.core.windows.net/image/product1.png" style="width:250px; height:250px" />
+                </a>
+            </p>
+            <button class="buy-2">Details</button>
+        </div>
+        <div class="content">
+
+            <h3>Suppliers</h3>
+            <p>
+                <a href="~/Admin/ListSuppliers">
+                    <img src="https://projectstorage444.blob.core.windows.net/image/supplier1.png" style="width:250px; height:250px" />
+                </a>
+            </p>
+            <button class="buy-3">Details</button>
+        </div>
+    </div>
+</body>
+</html>

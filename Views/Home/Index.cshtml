@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+</style>
+
+<form class="form" id="form1" runat="server">
+    <div align="center" id="carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+            <li data-target="#carousel" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="https://projectstorage444.blob.core.windows.net/image/slide1.png" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a href="~/Customer/Login">HeadPhones</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://projectstorage444.blob.core.windows.net/image/slide2.png" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a href="~/Customer/Login">Mobile Accessories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://projectstorage444.blob.core.windows.net/image/slide3.png" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a href="~/Customer/Login">Lighting Solutions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://projectstorage444.blob.core.windows.net/image/slide4.png" />
+                <div align="left" class="container">
+                    <div class="carousel-caption">
+                        <a href="~/Customer/Login">Haircare</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://projectstorage444.blob.core.windows.net/image/slide5.png" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a href="~/Home/Product">Kitchen Jars & Containers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://projectstorage444.blob.core.windows.net/image/slide6.png" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <a href="~/Customer/Login">Everyday Essentials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<a  class="left carousel-control" data-slide="prev">
+            <span class="icon-prev"></span>
+            </a>
+        <a  class="right carousel-control" data-slide="next">
+            <span class="icon-next"></span>
+            </a>*@
+    <script>
+        $("#carousel").carousel(
+            {
+                interval: 3000
+            });
+    </script>
+</form>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Sony Headphones</h2>
+        <img src="https://projectstorage444.blob.core.windows.net/image/headphone.jpg" style="width:300px;height:300px" />
+        <p>
+            Sony Wh-Ch510 Bluetooth Wireless On Ear Headphones
+            Up-To 35Hrs Playtime Lightweight, Type-C, Play/Pause
+            Control, 30Mm Driver, Bt Version 5.0 & Voice Assistant
+            Support For Mobiles - Blue
+        </p>
+        <p><a class="btn btn-default" href="~/Customer/Login">$24.25</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Realme Powerbank</h2>
+        <img src="https://projectstorage444.blob.core.windows.net/image/powerbank.png" style="width:300px;height:300px" />
+        <p>
+            Realme 10000 mAh Power Bank (18 W, Quick Charge 3.0)
+            (Yellow, Lithium Polymer) 12W Two-Way Fast Charge and
+            Recharge with Dual Output & Input ports, Charge a 4500mAh
+            phone 1.7 times and 3000mAh phone 2.1 times, Trendy, Sleek
+            & Modern design (1.57 cm thickness), Both USB-A Ports
+            support a maximum power of 12W (5V-2.4A) for single port
+        </p>
+        <p><a class="btn btn-default" href="~/Customer/Login">$20.91</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Philips LED light bulb</h2>
+        <img src="https://projectstorage444.blob.core.windows.net/image/bulb.png" style="width:300px; height:300px" />
+        <p>
+            PHILIPS 7W B22D Led Cool Day Light Bulb (929001143013)
+            Bulb Base: B22, Color Temperature: 6500K, Lumen: 600,
+            Equivalent Wattage: 60 watts, Low energy consumption
+            and non-dimmable, Lifetime of 15,000 hours and UV and
+            IR free light, Up to 40 percent energy saving (compared to CFL)
+        </p>
+        <p><a class="btn btn-default" href="~/Customer/Login">$4.52</a></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Spice Storage Jars Pack-6</h2>
+        <img src="https://projectstorage444.blob.core.windows.net/image/jars.jpg" style="width:300px; height:300px" />
+        <p>
+            AARAV HOUSE - 500 Ml Ball Mason Glass Jar & Container
+            with Air Tight Silver Metal Lid, Grocery, Dry Fruit, 
+            Spice Storage Jars Pack-6
+        </p>
+        <p><a class="btn btn-default" href="~/Customer/Login">$6.05</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>L'Oréal Shampoo</h2>
+        <img src="https://projectstorage444.blob.core.windows.net/image/shamppo.jpg" style="width:300px ;height:300px" />
+        <p>
+            L'Oréal Professionnel Absolut Repair Shampoo With
+            Protein And Gold Quinoa For Dry And Damaged Hair,
+            Serie Expert, 300Ml
+        </p>
+        <p><a class="btn btn-default" href="~/Customer/Login">$8.34</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Haldiram's Nagpur Bhujia Sev,400g</h2>
+        <img src="https://projectstorage444.blob.core.windows.net/image/sanks.jpg" style="width:300px; height:300px" />
+        <p>
+            Haldiram's Nagpur Bhujia Sev,400g, Brand 
+            Haldiram's Nagpur,Flavour Spicy, Diet Type	Vegetarian
+            Weight	400 Grams, Specialty	Suitable_for_vegetarians
+        </p>
+        <p><a class="btn btn-default" href="~/Customer/Login">$1.27</a></p>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS2001: Source file 'D:\Capstone Project\Project_2\product_tb.cs' could not be found.
+dotnet_diagnostic.CS2001.severity = error
